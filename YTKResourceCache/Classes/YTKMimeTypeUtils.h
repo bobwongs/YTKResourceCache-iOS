@@ -1,6 +1,6 @@
 //
 //  YTKMimeTypeUtils.h
-//  AFNetworking
+//  YTKResourceCache
 //
 //  Created by lihaichun on 2019/1/3.
 //

@@ -36,6 +36,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (nullable id<YTKResourceCacheProtocol>)getResourceCacheWithRequest:(NSURLRequest *)request;
 
+/** 默认相应头里面有Content-Length、Content-Type，如果需要额外设置头，则实现下面方法 */
++ (NSDictionary *)extraResponseHeader;
+
 @end
 
 NS_ASSUME_NONNULL_END

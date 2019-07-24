@@ -92,6 +92,11 @@ id<YTKCacheFileFinder> fileFinder = [YTKCacheFileFinder new];
 [[YTKResourceCache sharedCache] setWebViewUserAgentPattern:nil];
 ```
 
+设置额外的请求拦截返回头部信息，用法如下：
+
+```objective-c
+[[YTKResourceCache sharedCache] setExtraResponseHeader:@{@"Access-Control-Allow-Origin" : @"*"}];
+```
 
 ## 作者
 

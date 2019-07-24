@@ -59,6 +59,13 @@ NSString * const YTKCacheProtocolNotImplemented = @"YTKCacheProtocolNotImplement
             if (mimeType) {
                 [headers setObject:mimeType forKey:@"Content-Type"];
             }
+            if ([YTKResourceCache respondsToSelector:@selector(extraResponseHeader)]) {
+                NSDictionary *extraHeader = [YTKResourceCache extraResponseHeader];
+                if ([extraHeader isKindOfClass:[NSDictionary class]]) {
+                    [headers addEntriesFromDictionary:extraHeader];
+                }
+            }
+
             NSHTTPURLResponse* response = [[NSHTTPURLResponse alloc] initWithURL:self.request.URL statusCode:200 HTTPVersion:@"HTTP/1.1" headerFields:headers];
             [self.client URLProtocol:self didReceiveResponse:response cacheStoragePolicy:NSURLCacheStorageAllowedInMemoryOnly];
             [self.client URLProtocol:self didLoadData:data];

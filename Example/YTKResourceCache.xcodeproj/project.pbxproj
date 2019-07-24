@@ -303,7 +303,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-YTKResourceCache_Example/Pods-YTKResourceCache_Example-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-YTKResourceCache_Example/Pods-YTKResourceCache_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/YTKNetwork/YTKNetwork.framework",
 				"${BUILT_PRODUCTS_DIR}/YTKResourceCache/YTKResourceCache.framework",
@@ -316,7 +316,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YTKResourceCache_Example/Pods-YTKResourceCache_Example-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YTKResourceCache_Example/Pods-YTKResourceCache_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		2FBB085E5FC2D7A205F6411F /* [CP] Check Pods Manifest.lock */ = {
