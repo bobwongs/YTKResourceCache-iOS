@@ -1,8 +1,8 @@
 {
   "name": "YTKResourceCache",
   "version": "0.1.0",
-  "summary": "A short description of YTKResourceCache.",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "YTKResourceCache is used to intercept HTTP request and request download cache.",
+  "description": "YTKResourceCache use NSURLProtocol to implement intercept http request ability, and load disk file as the response data, also could download the request file to save in disk file.",
   "homepage": "https://github.com/yuantiku/YTKResourceCache-iOS",
   "license": {
     "type": "MIT",
