@@ -68,6 +68,10 @@ static NSString * const kDefaultWebViewUserAgentPattern = @"^Mozilla.*Mac OS X.*
     return [YTKResourceCache sharedCache].cacheLoader;
 }
 
++ (NSDictionary *)extraResponseHeader {
+    return [YTKResourceCache sharedCache].extraResponseHeader;
+}
+
 #pragma mark - Properties
 
 - (void)setFileFinder:(id<YTKCacheFileFinder>)fileFinder {

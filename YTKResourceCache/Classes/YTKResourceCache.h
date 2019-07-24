@@ -37,6 +37,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, strong, nullable) NSString *interceptMethod;
 
+/**
+ 用于拦截请求返回response的时候，添加额外的头部信息，默认头部信息包含Content-Length、Content-Type
+ */
+@property (nonatomic, copy, nullable) NSDictionary *extraResponseHeader;
+
 + (instancetype)sharedCache;
 
 /**

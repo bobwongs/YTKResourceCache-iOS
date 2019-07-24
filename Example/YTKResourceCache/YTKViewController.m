@@ -27,6 +27,7 @@
     [[YTKResourceCache sharedCache] setFileFinder:fileFinder];
     [[YTKResourceCache sharedCache] setInterceptMethod:nil];
     [[YTKResourceCache sharedCache] setWebViewUserAgentPattern:nil];
+    [[YTKResourceCache sharedCache] setExtraResponseHeader:@{@"Access-Control-Allow-Origin" : @"*"}];
 
     NSURL *URL = [NSURL URLWithString:@"https://www.quanjing.com/imgbuy/QJ6919057308.html"];
     [self.view addSubview:self.webView];
